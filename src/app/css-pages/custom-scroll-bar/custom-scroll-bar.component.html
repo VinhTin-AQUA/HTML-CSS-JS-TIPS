@@ -1,0 +1,71 @@
+<div class="p-3">
+	<div class="border-b p-4">
+		<div id="container">
+			Odio nobis enim. Dolorum perferendis ut aut necessitatibus laudantium ullam omnis nisi
+			molestiae. Quidem nihil totam accusantium doloribus. Ab esse molestiae earum omnis.
+			Labore non vero in in et. Illo et maxime placeat quasi aut facilis aut inventore autem.
+			Molestias aperiam voluptatem voluptates voluptas quia. Placeat assumenda in aliquam
+			repellendus consequatur reiciendis eius laborum. Eaque possimus fugiat ducimus quo quo
+			impedit. Amet inventore unde. Non illo dolorem rerum deleniti ut. Recusandae quis
+			reiciendis dolor porro odio delectus aut cupiditate. Voluptas iste est non molestiae et
+			illo ut officiis. Et maxime voluptatum et. Dolorem omnis eveniet officia mollitia veniam
+			vel. Repellat provident veniam.
+		</div>
+	</div>
+
+	<div class="grid grid-cols-2 gap-2">
+		<div class="col-span-2 md:col-span-1">
+			<div class="text-center text-xl font-medium">HTML</div>
+
+			<div class="w-full mx-auto mt-2 bg-gray-900 rounded-lg overflow-hidden">
+				<div class="p-4">
+					<div class="flex items-center justify-between">
+						<span class="text-gray-200 text-xl font-bold">Code Snippet</span>
+						<button
+							(click)="copyText('html')"
+							id="copyButton"
+							class="px-4 py-2 text-white bg-teal-500 rounded hover:bg-teal-600"
+						>
+							Copy
+						</button>
+					</div>
+				</div>
+
+				<div class="p-2 text-white">
+					<pre class="language-html">
+                        <code class="text-sm">
+{{htmlCode}}
+                        </code>
+                    </pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-span-2 md:col-span-1">
+			<div class="text-center text-xl font-medium">CSS</div>
+
+			<div class="w-full mx-auto mt-2 bg-gray-900 rounded-lg overflow-hidden">
+				<div class="p-4">
+					<div class="flex items-center justify-between">
+						<span class="text-gray-200 text-xl font-bold">Code Snippet</span>
+						<button
+							(click)="copyText('css')"
+							id="copyButton"
+							class="px-4 py-2 text-white bg-teal-500 rounded hover:bg-teal-600"
+						>
+							Copy
+						</button>
+					</div>
+				</div>
+
+				<div class="p-2 text-white">
+					<pre class="language-css">
+                        <code class="text-sm">
+{{cssCode}}
+                        </code>
+                    </pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

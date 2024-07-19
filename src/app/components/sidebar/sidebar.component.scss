@@ -1,0 +1,40 @@
+.side-bar {
+	@apply p-2 shadow-md bg-white overflow-hidden;
+	max-height: 100dvh;
+	min-height: 100dvh;
+}
+
+select {
+    @apply w-full outline-none bg-[#fee2e2] p-2 rounded-md;
+    option {
+        @apply bg-green-200;
+    }
+}
+
+.menu {
+    @apply py-2 ;
+    
+    .menu-item {
+        @apply px-6 py-1 whitespace-nowrap duration-100 rounded-md select-none cursor-pointer ;
+    }
+
+
+
+    .menu-item:hover {
+        @apply bg-red-200;
+    }
+
+    li::marker {
+        content: '🟢';
+    }
+
+}
+
+.menu-active {
+    @apply text-red-500;
+
+    li::marker {
+        content: '⭐';
+    }
+}
+

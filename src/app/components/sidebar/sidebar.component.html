@@ -1,0 +1,58 @@
+<div class="side-bar">
+	<div class="p-2 border-b-2">
+		<select (change)="onChangeMenuTopic($event)" class="">
+			<option value="html">Html</option>
+			<option selected value="css">Css</option>
+			<option value="js">JavaScript</option>
+		</select>
+	</div>
+
+	<div class="max-h-[90dvh] overflow-y-auto overflow-x-hidden">
+		@if (menuActivated === 'css') {
+		<ul class="menu">
+			@for (item of cssMenus; track $index) {
+			<div
+				class="menu-item"
+				routerLink="{{ item.route }}"
+				routerLinkActive="menu-active"
+				[routerLinkActiveOptions]="{ exact: true }"
+			>
+				<li>
+					{{ item.name }}
+				</li>
+			</div>
+			}
+		</ul>
+		} @else if (menuActivated === 'js') {
+		<ul class="menu">
+			@for (item of jsMenus; track $index) {
+			<div
+				class="menu-item"
+				routerLink="{{ item.route }}"
+				routerLinkActive="menu-active"
+				[routerLinkActiveOptions]="{ exact: true }"
+			>
+				<li>
+					{{ item.name }}
+				</li>
+			</div>
+			}
+		</ul>
+		} @else if (menuActivated === 'html') {
+		<ul class="menu">
+			@for (item of htmlMenus; track $index) {
+			<div
+				class="menu-item"
+				routerLink="{{ item.route }}"
+				routerLinkActive="menu-active"
+				[routerLinkActiveOptions]="{ exact: true }"
+			>
+				<li>
+					{{ item.name }}
+				</li>
+			</div>
+			}
+		</ul>
+		}
+	</div>
+</div>
