@@ -11,6 +11,7 @@ import { LineClampComponent } from './css-pages/line-clamp/line-clamp.component'
 import { CustomScrollBarComponent } from './css-pages/custom-scroll-bar/custom-scroll-bar.component';
 import { SmoothComponent } from './html-pages/smooth/smooth.component';
 import { CheckboxComponent } from './css-pages/checkbox/checkbox.component';
+import { NotAndHoverComponent } from './css-pages/not-and-hover/not-and-hover.component';
 
 export const routes: Routes = [
 	{
@@ -39,6 +40,7 @@ export const routes: Routes = [
 				title: 'Custom Scroll',
 			},
 			{ path: 'check-box', component: CheckboxComponent, title: 'Checkbox' },
+			{ path: 'not-and-hover', component: NotAndHoverComponent, title: 'Note And Hover' },
 			{ path: '**', redirectTo: 'image-masking' },
 		],
 	},

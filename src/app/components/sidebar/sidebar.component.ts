@@ -65,6 +65,11 @@ export class SidebarComponent {
 			title: 'Checkbox',
 			name: 'Checkbox',
 		},
+		{
+			route: '/css/not-and-hover',
+			title: 'Note And Hover',
+			name: 'Note And Hover',
+		},
 	];
 
 	readonly htmlMenus = [
