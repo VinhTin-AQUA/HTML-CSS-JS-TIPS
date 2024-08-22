@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'app-custom-cursor',
+	selector: 'app-drop-shadow',
 	standalone: true,
 	imports: [],
-	templateUrl: './custom-cursor.component.html',
-	styleUrl: './custom-cursor.component.scss',
+	templateUrl: './drop-shadow.component.html',
+	styleUrl: './drop-shadow.component.scss',
 })
-export class CustomCursorComponent {
-	htmlCode = 'html';
+export class DropShadowComponent {
+	htmlCode = `
+  <img width="200" src="https://cdn-icons-png.flaticon.com/512/2544/2544087.png" alt="" />`;
 
-	cssCode = `html {
-    cursor: url('/assets/cursors/pointer.png'), auto;
-}`;
+	cssCode = `
+    img {
+        filter: drop-shadow(2px 20px 10px #008000);
+        border: 1px solid green;
+    }`;
 
 	copyText(flag: string): void {
 		if (flag === 'html') {

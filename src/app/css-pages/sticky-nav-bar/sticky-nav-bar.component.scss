@@ -1,0 +1,15 @@
+#text-container {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#sticky-nav {
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+}

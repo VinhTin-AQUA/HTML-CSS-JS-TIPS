@@ -70,6 +70,21 @@ export class SidebarComponent {
 			title: 'Note And Hover',
 			name: 'Note And Hover',
 		},
+		{
+			route: '/css/backdrop-filter-blur',
+			title: 'Backdrop Filter Blur',
+			name: 'Backdrop Filter Blur',
+		},
+		{
+			route: '/css/drop-shadow',
+			title: 'Drop Shadow',
+			name: 'Drop Shadow',
+		},
+		{
+			route: '/css/sticky-nav-bar',
+			title: 'Sticky Nav-bar',
+			name: 'Sticky Nav-bar',
+		},
 	];
 
 	readonly htmlMenus = [

@@ -12,6 +12,9 @@ import { CustomScrollBarComponent } from './css-pages/custom-scroll-bar/custom-s
 import { SmoothComponent } from './html-pages/smooth/smooth.component';
 import { CheckboxComponent } from './css-pages/checkbox/checkbox.component';
 import { NotAndHoverComponent } from './css-pages/not-and-hover/not-and-hover.component';
+import { BackdropFilterBlurComponent } from './css-pages/backdrop-filter-blur/backdrop-filter-blur.component';
+import { DropShadowComponent } from './css-pages/drop-shadow/drop-shadow.component';
+import { StickyNavBarComponent } from './css-pages/sticky-nav-bar/sticky-nav-bar.component';
 
 export const routes: Routes = [
 	{
@@ -41,6 +44,9 @@ export const routes: Routes = [
 			},
 			{ path: 'check-box', component: CheckboxComponent, title: 'Checkbox' },
 			{ path: 'not-and-hover', component: NotAndHoverComponent, title: 'Note And Hover' },
+			{ path: 'backdrop-filter-blur', component: BackdropFilterBlurComponent, title: 'Backdrop Filter Blur' },
+			{ path: 'drop-shadow', component: DropShadowComponent, title: 'Drop Shadow' },
+			{ path: 'sticky-nav-bar', component: StickyNavBarComponent, title: 'Sticky Navbar' },
 			{ path: '**', redirectTo: 'image-masking' },
 		],
 	},
