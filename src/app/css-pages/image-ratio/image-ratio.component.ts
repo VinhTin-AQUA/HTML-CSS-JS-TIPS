@@ -8,23 +8,24 @@ import { Component } from '@angular/core';
 	styleUrl: './image-ratio.component.scss',
 })
 export class ImageRatioComponent {
-	htmlCode = '<div class="image"></div>';
+	htmlCode = `<div class="flex justify-center">
+            <div class="image-container">
+                <img src="/assets/cat.jpg" alt="">
+            </div>
+        </div>`;
 	cssCode =
-		'.image { \n' +
-		'   width: 300px; \n' +
-		'   height: 300px; \n' +
-		"   background: url('/assets/image-masking/image_1.jpg'); \n" +
-		'   background-size: cover; \n' +
-		'   background-repeat: no-repeat; \n' +
-		'} \n' +
-		'.image::before { \n' +
-		"   background: url('/assets/image-masking/image_2.jpg'); \n" +
-		'   mix-blend-mode: screen; \n' +
-		"   content: ''; \n" +
-		'   display: block; \n' +
-		'   width: 300px; \n' +
-		'   height: 300px; \n' +
-		'}; \n';
+		`.image-container {
+    width: 50%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+`;
 
 	copyText(flag: string): void {
 		if (flag === 'html') {
