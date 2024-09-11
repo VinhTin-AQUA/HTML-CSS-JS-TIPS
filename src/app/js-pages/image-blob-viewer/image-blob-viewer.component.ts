@@ -20,11 +20,13 @@ export class ImageBlobViewerComponent {
   `;
 
 	jsCode = `
-  onChange(event: any) {
-    const file = event.target.files[0];
-    const blobUrl = URL.createObjectURL(file); // Tạo Blob URL
-    this.blobUrl = blobUrl
-  }
+document.getElementById('fileInput').addEventListener('change', function (event) {
+	const file = event.target.files[0]; // Lấy tệp đầu tiên từ input
+	const blobUrl = URL.createObjectURL(file); // Tạo Blob URL
+
+	// Gán URL cho thẻ img để hiển thị hình ảnh
+	document.getElementById('previewImage').src = blobUrl;
+});
     `;
 
 	onChange(event: any) {
