@@ -15,6 +15,7 @@ import { NotAndHoverComponent } from './css-pages/not-and-hover/not-and-hover.co
 import { BackdropFilterBlurComponent } from './css-pages/backdrop-filter-blur/backdrop-filter-blur.component';
 import { DropShadowComponent } from './css-pages/drop-shadow/drop-shadow.component';
 import { StickyNavBarComponent } from './css-pages/sticky-nav-bar/sticky-nav-bar.component';
+import { ImageBlobViewerComponent } from './js-pages/image-blob-viewer/image-blob-viewer.component';
 
 export const routes: Routes = [
 	{
@@ -44,13 +45,26 @@ export const routes: Routes = [
 			},
 			{ path: 'check-box', component: CheckboxComponent, title: 'Checkbox' },
 			{ path: 'not-and-hover', component: NotAndHoverComponent, title: 'Note And Hover' },
-			{ path: 'backdrop-filter-blur', component: BackdropFilterBlurComponent, title: 'Backdrop Filter Blur' },
+			{
+				path: 'backdrop-filter-blur',
+				component: BackdropFilterBlurComponent,
+				title: 'Backdrop Filter Blur',
+			},
 			{ path: 'drop-shadow', component: DropShadowComponent, title: 'Drop Shadow' },
 			{ path: 'sticky-nav-bar', component: StickyNavBarComponent, title: 'Sticky Navbar' },
 			{ path: '**', redirectTo: 'image-masking' },
 		],
 	},
-	{ path: 'js', children: [] },
+	{
+		path: 'js',
+		children: [
+			{
+				path: 'image-blob-viewer',
+				component: ImageBlobViewerComponent,
+				title: 'Image blob viewer',
+			},
+		],
+	},
 	{
 		path: 'html',
 		children: [

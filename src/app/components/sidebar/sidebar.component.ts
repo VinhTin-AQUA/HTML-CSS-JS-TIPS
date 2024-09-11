@@ -97,9 +97,9 @@ export class SidebarComponent {
 
 	readonly jsMenus = [
 		{
-			route: '/css/image-masking',
-			title: 'Image Masking CSS',
-			name: 'Image Masking',
+			route: '/js/image-blob-viewer',
+			title: 'Image Blob Viewer',
+			name: 'Image Blob Viewer',
 		},
 	];
 
