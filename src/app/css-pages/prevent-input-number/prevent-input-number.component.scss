@@ -1,0 +1,23 @@
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Đối với Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#input-numbrt {
+    @apply border-2 rounded-md outline-none py-1 px-2;
+}
+
+
+
+
+
+
+
+

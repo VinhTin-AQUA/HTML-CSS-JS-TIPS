@@ -16,6 +16,7 @@ import { BackdropFilterBlurComponent } from './css-pages/backdrop-filter-blur/ba
 import { DropShadowComponent } from './css-pages/drop-shadow/drop-shadow.component';
 import { StickyNavBarComponent } from './css-pages/sticky-nav-bar/sticky-nav-bar.component';
 import { ImageBlobViewerComponent } from './js-pages/image-blob-viewer/image-blob-viewer.component';
+import { PreventInputNumberComponent } from './css-pages/prevent-input-number/prevent-input-number.component';
 
 export const routes: Routes = [
 	{
@@ -52,6 +53,7 @@ export const routes: Routes = [
 			},
 			{ path: 'drop-shadow', component: DropShadowComponent, title: 'Drop Shadow' },
 			{ path: 'sticky-nav-bar', component: StickyNavBarComponent, title: 'Sticky Navbar' },
+			{ path: 'prevent-input-number', component: PreventInputNumberComponent, title: 'Ngăn chặn nhập e trong input' },
 			{ path: '**', redirectTo: 'image-masking' },
 		],
 	},

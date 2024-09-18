@@ -85,6 +85,11 @@ export class SidebarComponent {
 			title: 'Sticky Nav-bar',
 			name: 'Sticky Nav-bar',
 		},
+		{
+			route: '/css/prevent-input-number',
+			title: 'Ngăn chặn input number',
+			name: 'Ngăn chặn input number',
+		},
 	];
 
 	readonly htmlMenus = [
