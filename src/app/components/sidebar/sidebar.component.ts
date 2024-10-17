@@ -90,6 +90,7 @@ export class SidebarComponent {
 			title: 'Ngăn chặn input number',
 			name: 'Ngăn chặn input number',
 		},
+		
 	];
 
 	readonly htmlMenus = [

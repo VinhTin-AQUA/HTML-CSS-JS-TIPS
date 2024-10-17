@@ -20,23 +20,24 @@ export class CustomScrollBarComponent {
   vel. Repellat provident veniam.
 </div>`;
 
-	cssCode = `/* Custom scrollbar cho trình duyệt WebKit */
-::-webkit-scrollbar {
-    width: 12px; /* Chiều rộng của thanh cuộn */
+	cssCode = `
+div::-webkit-scrollbar {
+	width: 5px; /* width of the entire scrollbar */
+	height: 5px;
 }
 
-::-webkit-scrollbar-track {
-    background: #e94c4c; /* Màu nền của track */
+div::-webkit-scrollbar-track {
+	background: #df1818; /* color of the tracking area */
 }
 
-::-webkit-scrollbar-thumb {
-    background: #2af04b; /* Màu của thumb */
-    border-radius: 6px; /* Bo góc của thumb */
+div::-webkit-scrollbar-thumb {
+	background: #09cf55; /* color of the scroll thumb */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Màu của thumb khi hover */
-}`;
+div::-webkit-scrollbar-thumb:hover {
+	background: #210be7; /* color of the scroll thumb on hover */
+}
+`;
 
 	copyText(flag: string): void {
 		if (flag === 'html') {
